@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#EAF3FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kerri Kuhnke - Temperature Conversion"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#183B59"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+            android:id="@+id/imgTemperature"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/img_temperature"
+            android:contentDescription="Temperature thermometer image"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Temperature"
+            android:textSize="20sp"
+            android:textColor="#183B59"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/txtTemperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter temperature value"
+            android:inputType="numberDecimal|numberSigned"
+            android:textSize="20sp"
+            android:singleLine="true"/>
+
+        <RadioGroup
+            android:id="@+id/radGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/radFtoC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fahrenheit to Celsius"
+                android:textSize="20sp"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radCtoF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Celsius to Fahrenheit"
+                android:textSize="20sp"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnConvert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convert Temperature"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#1565C0"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Converted Temperature"
+            android:textSize="20sp"
+            android:textColor="#183B59"
+            android:gravity="center"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:gravity="center"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
